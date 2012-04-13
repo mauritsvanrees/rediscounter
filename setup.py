@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 
 version = '0.1.dev0'
+long_description = open('README.rst').read()
 
 setup(
     name='rediscounter',
     version=version,
     description="Counters in Redis",
-    long_description="""\
-""",
+    long_description=long_description,
     # Get strings from
     # http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[],
