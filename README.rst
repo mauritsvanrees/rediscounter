@@ -15,7 +15,7 @@ There are a few elements in this code:
 
 - A ``rediscounter`` Python package, with some code for increasing a
   counter in Redis and getting its value (hardly rocket science) using
-  the `redis Python package`, and some WSGI code.
+  the `redis Python package`_, and some WSGI code.
 
 - A Paste server with two pipelines.  Start it with ``bin/paster serve
   --reload devel.ini``.  It is currently setup to serve on
