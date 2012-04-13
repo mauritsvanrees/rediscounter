@@ -15,7 +15,7 @@ There are a few elements in this code:
 
 - A ``rediscounter`` Python package, with some code for increasing a
   counter in Redis and getting its value (hardly rocket science) using
-  the redis_ Python package, and some WSGI code.
+  the `redis Python package`, and some WSGI code.
 
 - A Paste server with two pipelines.  Start it with ``bin/paster serve
   --reload devel.ini``.  It is currently setup to serve on
@@ -39,4 +39,4 @@ There are a few elements in this code:
 
 .. _Redis: http://redis.io/
 .. _buildout: http://www.buildout.org/
-.. _redis: http://pypi.python.org/pypi/redis
+.. _`redis Python package`: http://pypi.python.org/pypi/redis
