@@ -1,7 +1,8 @@
 Redis Counter
 =============
 
-At the moment this is a toy project, a proof of concept.
+At the moment this is a toy project, a proof of concept.  In places it
+is quite simplistic, not robust, no tests.  So use it at your own risk.
 
 The main idea is that we use Redis_ to keep a few counters of
 visits to web pages.
@@ -11,7 +12,8 @@ There are a few elements in this code:
 - A ``bootstrap.py`` and ``buildout.cfg`` so you can use buildout_ to
   set everything up for testing.
 
-- A Redis_ server, setup by buildout.
+- A Redis_ server, setup by buildout.  Start it with
+  ``bin/redis-server``.
 
 - A ``rediscounter`` Python package, with some code for increasing a
   counter in Redis and getting its value (hardly rocket science) using
