@@ -1,7 +1,10 @@
 from setuptools import setup, find_packages
 
 version = '0.1.dev0'
-long_description = open('README.rst').read()
+long_description = '\n\n'.join([
+    open('README.rst').read(),
+    open('CHANGES.txt').read()
+    ])
 
 setup(
     name='rediscounter',
