@@ -29,5 +29,8 @@ setup(
         'paste.filter_app_factory': [
             'filter = rediscounter.filter:CounterFilter.paste_deploy_middleware',
             ],
+        'paste.app_factory': [
+            'app = rediscounter.app:app_factory',
+            ],
             },
     )
