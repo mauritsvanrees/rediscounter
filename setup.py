@@ -20,6 +20,8 @@ setup(name='rediscounter',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
+            'PasteDeploy',
+            'WSGIFilter',
             'redis',
       ],
       entry_points="""
