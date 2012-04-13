@@ -11,16 +11,16 @@ class Counter(object):
     def __init__(self):
         self._db = get_redis()
 
-    def visit(self, uid, visitor=None):
+    def visit(self, key, visitor=None):
         if visitor is not None:
-            self.visitor(uid, visitor)
-        return self._db.incr(uid + '-visits')
+            self.visitor(key, visitor)
+        return self._db.incr(key + '-visits')
 
-    def visits(self, uid):
-        return self._db.get(uid + '-visits')
+    def visits(self, key):
+        return self._db.get(key + '-visits')
 
-    def visitor(self, uid, visitor):
-        return self._db.sadd(uid + '-visitors', visitor)
+    def visitor(self, key, visitor):
+        return self._db.sadd(key + '-visitors', visitor)
 
-    def visitors(self, uid):
-        return self._db.smembers(uid + '-visitors')
+    def visitors(self, key):
+        return self._db.smembers(key + '-visitors')
