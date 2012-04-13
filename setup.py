@@ -27,7 +27,7 @@ setup(
           ],
     entry_points={
         'paste.filter_app_factory': [
-            'filter = rediscounters:filter.CounterFilter.paste_deploy_middleware',
+            'filter = rediscounter:filter.CounterFilter.paste_deploy_middleware',
             ],
             },
     )
