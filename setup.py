@@ -25,7 +25,9 @@ setup(
           'WSGIFilter',
           'redis',
           ],
-    entry_points="""
-    # -*- Entry points: -*-
-    """,
+    entry_points={
+        'paste.filter_app_factory': [
+            'filter = rediscounters:filter.CounterFilter.paste_deploy_middleware',
+            ],
+            },
     )
