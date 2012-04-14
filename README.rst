@@ -10,7 +10,7 @@ visits to web pages.
 There are a few elements in this code:
 
 - A ``bootstrap.py`` and ``buildout.cfg`` so you can use buildout_ to
-  set everything up for testing.
+  set everything up for testing.  Tested with Python 2.6.
 
 - A Redis_ server, setup by buildout.  Start it with
   ``bin/redis-server``.
