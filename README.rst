@@ -4,6 +4,10 @@ Redis Counter
 At the moment this is a toy project, a proof of concept.  In places it
 is quite simplistic, not robust, no tests.  So use it at your own risk.
 
+If you are looking for something like this to use in combination with
+the ZODB, you may also want to have a look at
+https://github.com/davisagli/collective.firehose
+
 The main idea is that we use Redis_ to keep a few counters of
 visits to web pages.
 
